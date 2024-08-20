@@ -36,7 +36,7 @@ To get started with this project, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/ekegusii-language-documentation.git
+   git clone https://github.com/felixmakinda/ekegusii-language-documentation.git
 
     Install Dependencies:
     If there are any dependencies for scripts or tools, install them using the following command:
