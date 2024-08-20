@@ -9,6 +9,7 @@ Welcome to the Ekegusii Language Documentation Project! This open-source project
 - [Project Overview](#project-overview)
 - [Features](#features)
 - [Getting Started](#getting-started)
+- [Repository Structure](#repository-structure)
 - [How to Contribute](#how-to-contribute)
 - [API Development](#api-development)
 - [License](#license)
@@ -52,6 +53,41 @@ To get started with this project, follow these steps:
     Contribute:
     Refer to the CONTRIBUTING.md file to learn how to add new words, proverbs, or grammar rules to the database.
 
+Repository Structure
+
+Here’s an overview of the repository structure:
+
+plaintext
+
+ekegusii-language-documentation/
+│
+├── data/
+│   ├── words.json          # Ekegusii words and their details
+│   ├── proverbs.json       # Collection of Ekegusii proverbs and meanings
+│   ├── grammar.md          # Documentation of grammar rules
+│   └── examples/           # Example sentences and usage (optional)
+│
+├── scripts/
+│   ├── import_data.py      # Script to import data into the database
+│   ├── generate_api.py     # Script to generate API from the data (upcoming)
+│   └── utils.py            # Utility functions for data processing
+│
+├── tests/
+│   ├── test_words.py       # Unit tests for word entries
+│   ├── test_proverbs.py    # Unit tests for proverb entries
+│   └── test_grammar.py     # Unit tests for grammar rules
+│
+├── .gitignore              # Git ignore file
+├── CONTRIBUTING.md         # Guidelines for contributing to the project
+├── LICENSE                 # License file
+└── README.md               # Project overview and instructions
+
+Directory Explanations:
+
+    data/: Contains all the language data including words, proverbs, and grammar documentation.
+    scripts/: Contains scripts for processing data, such as importing data into a database or generating an API.
+    tests/: Contains unit tests to ensure the integrity of the data and scripts.
+
 How to Contribute
 
 We welcome contributions from anyone interested in preserving the Ekegusii language. You can contribute by:
@@ -71,16 +107,14 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 
 Together, let's preserve the rich heritage of the Ekegusii language for future generations!
 
-markdown
+yaml
 
 
 ---
 
 ### Explanation:
 
-- **Project Overview**: Summarizes the purpose of the project and what it includes.
-- **Features**: Highlights the key aspects of the project, like the dictionary, proverbs, grammar documentation, and upcoming API.
-- **Getting Started**: Provides basic instructions on how to clone the repository, install dependencies (if any), and explore the data.
-- **How to Contribute**: Directs contributors to the `CONTRIBUTING.md` for detailed guidelines.
-- **API Development**: Mentions future plans for an API to access the data programmatically.
-- **License**: Indicates the licensing terms under the MIT License.
+- **Repository Structure**: Provides a clear outline of the project's directory structure, explaining what each directory and file is for.
+- **Directory Explanations**: Gives a brief description of the contents and purpose of each directory.
+
+This structure makes it easy for contributors to navigate the project and understand where to add new content or make changes.
